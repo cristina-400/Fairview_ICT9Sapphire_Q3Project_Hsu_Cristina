@@ -34,10 +34,18 @@
             float: left;
             margin-right: 10px;
         }
-        .center-text {
-            text-align: center;
-            display: block;
-            margin: 0 auto;
+            .footer {
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        font-family: monospace;
+        }
+        .textcolor {
+        background-color: transparent;
+        color: lime;
         }
         .schedule-container {
             text-align: center;
@@ -164,12 +172,9 @@
     </div>
     <br><br>
     <!-- Contact Us Section -->
-    <div id="contact-section">
-        <div class="container">
-            <div class="center-text">
-                <p class="text-black">Contact us at: <a href="mailto:email@OnlineTicket.com">email@OnlineTicket.com</a> | Follow us: <a href="#">Facebook</a>, <a href="#">Twitter</a></p>
-            </div>
+        <div class="container-fluid bg-dark rounded-top footer">
+                <span class="text-white" style="font-family: monospace;">Contact us at: <mark class="textcolor">email@OnlineTicket.com</mark> <br> Follow us: <a href="https://www.example.com">Facebook</a>, <a href="https://www.example.com">Twitter</a> <br> Hotline Number: <mark class="textcolor">5319-0169</mark></span>
         </div>
-    </div>
+    <br>
 </body>
 </html>
