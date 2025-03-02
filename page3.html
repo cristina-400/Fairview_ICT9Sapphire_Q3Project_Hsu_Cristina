@@ -11,15 +11,21 @@
     color: #45a049; 
     text-decoration: underline; 
 }	
-	        .center-text {
-            text-align: center;
-            display: block;
-            margin: 0 auto;
+	        .footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        font-family: monospace;
+}
 			
-		.textcolor {
-		background-color: transparent;
-    		color: green;
-		}
+	.textcolor {
+	background-color: transparent;
+    	color: lime;
+}
 
 
 
@@ -45,15 +51,30 @@
 				</div>
 			</nav>
 			<br><br>
+	    <div class="container mt-5">
+        <h2 class="text-center mb-4">Feedback Form</h2>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="3" placeholder="Your feedback"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
 
+<br> <br>
 
       
-        <div class="container">
-            <div class="center-text">
-            <text class="text-white">
-                <span class="text-white display-6 bg-dark" style="font-family: monospace;">Contact us at: email@Online Ticket.com | Follow us: <a href="https://www.example.com">Facebook</a>, <a href="https://www.example.com">Twitter</a> | Hotline Number: 5319-0169</span>
-            </text>
-	    </div>
+        <div class="container-fluid bg-dark rounded-top footer">
+                <span class="text-white" style="font-family: monospace;">Contact us at: <mark class="textcolor">email@OnlineTicket.com</mark> <br> Follow us: <a href="https://www.example.com">Facebook</a>, <a href="https://www.example.com">Twitter</a> <br> Hotline Number: <mark class="textcolor">5319-0169</mark></span>
         </div>
     <br>
 
@@ -62,5 +83,3 @@
 
 </body>
 </html>
-
-
